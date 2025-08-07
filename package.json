@@ -13,7 +13,7 @@
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "build:packages": "turbo run build -F=./packages/* --concurrency=2",
-    "build:apps": "turbo run build -F=./apps/* --concurrency=2",
+    "build:apps": "turbo run build -F=./apps/* --concurrency=2"
   },
   "devDependencies": {
     "@form/eslint-config": "workspace:*",
