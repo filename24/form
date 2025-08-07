@@ -1,7 +1,7 @@
 {
-  "extends": "@repo/typescript-config/nestjs.json",
+  "extends": "@form/tsconfig/nestjs.json",
   "compilerOptions": {
     "baseUrl": "./",
-    "outDir": "./dist",
+    "outDir": "./dist"
   }
 }

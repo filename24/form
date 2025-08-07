@@ -1,5 +1,5 @@
 {
-  "name": "@repo/api",
+  "name": "@form/api",
   "version": "0.0.0",
   "private": true,
   "license": "MIT",
@@ -34,14 +34,14 @@
     }
   },
   "dependencies": {
-    "@nestjs/mapped-types": "*"
+    "@nestjs/mapped-types": "^2.1.0"
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "@types/node": "^20.3.1",
-    "ts-loader": "^9.4.3",
+    "@form/eslint-config": "workspace:*",
+    "@form/tsconfig": "workspace:*",
+    "@types/node": "^24.2.0",
+    "ts-loader": "^9.5.2",
     "ts-node": "^10.9.2",
-    "typescript": "5.5.4"
+    "typescript": "5.9.2"
   }
 }

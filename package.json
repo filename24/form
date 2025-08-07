@@ -1,5 +1,5 @@
 {
-  "name": "my-turborepo",
+  "name": "form",
   "version": "0.0.0",
   "private": true,
   "description": "",
@@ -11,12 +11,14 @@
     "test": "turbo run test",
     "test:e2e": "turbo run test:e2e",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "build:packages": "turbo run build -F=./packages/* --concurrency=2",
+    "build:apps": "turbo run build -F=./apps/* --concurrency=2",
   },
   "devDependencies": {
-    "@repo/eslint-config": "workspace:*",
-    "@repo/typescript-config": "workspace:*",
-    "prettier": "^3.2.5",
+    "@form/eslint-config": "workspace:*",
+    "@form/tsconfig": "workspace:*",
+    "prettier": "^3.6.2",
     "turbo": "^2.5.5"
   },
   "packageManager": "pnpm@8.15.5",
