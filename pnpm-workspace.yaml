@@ -1,3 +1,29 @@
 packages:
-  - "apps/*"
-  - "packages/*"
+  - apps/*
+  - packages/*
+
+autoInstallPeers: false
+
+ignoredBuiltDependencies:
+  - '@tailwindcss/oxide'
+  - core-js-pure
+  - sharp
+  - unrs-resolver
+  - '@nestjs/core'
+
+onlyBuiltDependencies:
+  - '@prisma/client'
+  - '@prisma/engines'
+  - esbuild
+  - prisma
+
+peerDependencyRules:
+  allowAny:
+    - '*'
+  ignoreMissing:
+    - '*'
+
+publicHoistPattern:
+  - '*eslint*'
+  - '*prettier*'
+  - '*prisma*'

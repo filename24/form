@@ -1,7 +1,17 @@
 {
   "extends": "@form/tsconfig/nestjs.json",
   "compilerOptions": {
-    "baseUrl": "./",
-    "outDir": "./dist"
+    "baseUrl": "./src",
+    "outDir": "./dist",
+    "paths": {
+      "@/*": ["*"]
+    }
+  },
+  "watchOptions": {
+    "watchFile": "priorityPollingInterval",
+    "watchDirectory": "dynamicprioritypolling",
+    "fallbackPolling": "dynamicPriority",
+    "synchronousWatchDirectory": true,
+    "excludeDirectories": ["**/node_modules", "dist"]
   }
 }
